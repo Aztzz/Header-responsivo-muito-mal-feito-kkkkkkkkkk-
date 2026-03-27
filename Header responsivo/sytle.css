@@ -1,0 +1,66 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(196, 241, 255);
+    font-family: poppins, sans-serif;
+}
+
+li, a, button{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    background-color: bisque;
+
+}
+
+.logotipo {
+    font-size: 30px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.nav-links{
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 0px 20px;
+}
+
+.nav-links li a:hover {
+    color: powderblue;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: powderblue;
+
+}
+
+@media (max-width: 800px) {
+    li, a, button{
+    font-size: 12px;
+}
+
+    .logotipo {
+        font-size: 25px;
+    }
+}
