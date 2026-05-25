@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Estoque</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topo">
+        <header><span>JS//</span></header>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="estoque.html">Estoque</a>
+            <a href="caixa.html">Caixa</a>
+            <a href="senha.html">Senha</a>
+            <a href="notas.html">Notas</a>
+            <a href="conferencia.html">Conferência</a>
+        </nav>
+    </div>
+
+    <main>
+        <div class="caixaestoque">
+            <h1>Sistema de Estoque</h1>
+            <h3>O botão mostra os produtos cadastrados.</h3>
+            <input type="text" id="produto" placeholder="Digite o nome do produto">
+            <button onclick="AdicionarProduto()">Adicionar produto</button>
+            <input type="text" id="preco" placeholder="Digite o preço do produto">
+            <button onclick="AdicionarPreco()">Adicionar preço</button>
+            <p id="mensagem"></p>
+
+            <button onclick="MostrarProdutos()">Mostrar produtos</button>
+
+            <div class="ResultadoEstoque">
+                <ul id="ListaProdutos" class="ListaDeProdutos">
+
+                </ul>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>Antônio Silva Neto. Turma : Programador Web Senac Tech</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
